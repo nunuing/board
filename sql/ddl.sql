@@ -5,3 +5,4 @@ content varchar (30) not null,
 name varchar (30) not null,
 primary key(boardId)
 );
+INSERT INTO tbl_board( title, content, name) VALUES ('제목', '내용', '이름')
