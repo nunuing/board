@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns:th="http://www.thymeleaf.org"> <!-- thymeleaf 문법을 사용하기 위해서 선언-->
 <head>
-    <title>Hello</title>
+    <title>Hello page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-Hello
-<a href="/hello">hello</a>
+<h1>
+    <p th:text = "'안녕하세요 ' + ${data}"></p>      <!-- th 를 사용해 thymeleaf 문법 사용-->
+</h1>
 </body>
 </html>
