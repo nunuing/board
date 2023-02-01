@@ -30,6 +30,8 @@ public class MemoryMemberRepositoryTest {
         //then      -> 저장이 제대로 되었는지 확인 => 부여된 코드로
         Member result = repository.findByCode(member.getCode()).get();
         assertThat(result).isEqualTo(member);
+
+        System.out.println("save 정상 작동 확인");
     }
 
     @Test
@@ -52,6 +54,8 @@ public class MemoryMemberRepositoryTest {
 
         //then
         assertThat(result).isEqualTo(member1);
+
+        System.out.println("findById 정상 작동 확인");
     }
 
     @Test
@@ -74,6 +78,8 @@ public class MemoryMemberRepositoryTest {
 
         //then
         assertThat(result).isEqualTo(member1);
+
+        System.out.println("findByName 정상 작동 확인");
     }
 
     @Test
@@ -96,5 +102,7 @@ public class MemoryMemberRepositoryTest {
 
         //then
         assertThat(result.size()).isEqualTo(2);
+
+        System.out.println("findAll 정상 작동 확인");
     }
 }
