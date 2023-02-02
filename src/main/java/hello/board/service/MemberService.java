@@ -3,6 +3,7 @@ package hello.board.service;
 import hello.board.domain.Member;
 import hello.board.repository.MemberRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
@@ -29,5 +30,9 @@ public class MemberService {
     //전체 회원 조회
     public Optional<Member> findOne(Long memberCode){
         return memberRepository.findByCode(memberCode);
+    }
+
+    public List<Member> findMembers() {
+        return memberRepository.findAll();
     }
 }

@@ -1,12 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Start Page</title>
-</head>
 <body>
-<h1>
-    <p th:text="'hello ' + ${name}">hello! empty</p>
-</h1>
+<div class="container">
+    <div>
+        <h1>Hello Spring</h1>
+        <p>회원 기능</p>
+        <p>
+            <a href="/members/new">회원 가입</a>
+            <a href="/members">회원 목록</a>
+        </p>
+    </div>
+</div> <!-- /container -->
 </body>
 </html>
